@@ -3,13 +3,13 @@ def Show.highest_rating
 end
 
 def Show.most_popular_show
-    Show.where("highest_rating")
+    Show.where(rating = highest_rating)
 end
 
 def Show.lowest_rating
     Show.minimum("rating")
 end
-def Show.least_popular_showq
+def Show.least_popular_show
    
 end
 
